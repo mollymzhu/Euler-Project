@@ -2,7 +2,7 @@
 """
 Created on Wed Apr 13 14:42:43 2016
 
-@author: laa037
+@author: mollyz
 """
 from numpy import prod
 import math
