@@ -64,6 +64,16 @@ def next_prime(min):
     while is_prime(i)==False:
         i+=1
     return i
+
+def number_to_digits(input_number):
+    if type(input_number) is str:
+        string = input_number
+    else:
+        string = str(input_number)
+    digits = []
+    for i in range(len(string)):
+        digits.append(string[i])
+    return digits
         
 ###############################################    
 ###############################################
@@ -352,6 +362,12 @@ print(maximum, col[maximum])
 ###############################################
 # problem 15 #   
 print math.factorial(40)/math.factorial(20)/math.factorial(20)
+
+
+###############################################
+# problem 16 #   
+sum(number_to_digits(2**1000))
+
 
 ###############################################
 # problem 25 #     
