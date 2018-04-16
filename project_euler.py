@@ -21,10 +21,10 @@ def is_prime(number):
     if number%2 == 0:
         return False
     i = 3
-    while i <= 1 + int(sqrt(number)):
-        if number % i == 0:
+    while i <= 1 + int(sqrt(number))+1:
+        if (number <> i) & (number % i == 0):
             return False
-        i += 1
+        i += 2
     return True
     
     
@@ -209,17 +209,10 @@ def prob_9():
 
 ###############################################
 # problem 10 #
-    prime = 2
-    sum_of_prime = 0
-    while prime < 200000:
-        sum_of_prime+=prime
-        prime = next_prime(prime)
-        
-    print sum_of_prime
-    
-output = [i for i in range(3,200000)[::2] if is_prime(i)==True]
+output = [i for i in range(3,2000000)[::2] if is_prime(i)==True]
 output.append(2)
-sum(output)
+print(sum(output))
+
 ###############################################
 # problem 13 # 
 def prob_13():
