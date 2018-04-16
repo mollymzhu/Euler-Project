@@ -21,7 +21,7 @@ def is_prime(number):
     if number%2 == 0:
         return False
     i = 3
-    while i <= 1 + number/2:
+    while i <= 1 + int(sqrt(number)):
         if number % i == 0:
             return False
         i += 1
